@@ -24,17 +24,6 @@ export default [
             },
         ],
         plugins: [
-            peerDepsExternal(),
-            babel({
-                exclude: "node_modules/**",
-                presets: [
-                    "@babel/preset-react"
-                ],
-                plugins: [
-                    "@babel/plugin-transform-react-jsx"
-                ],
-                babelHelpers: "bundled"
-            }),
             resolve(),
             commonjs(),
             typescript({ tsconfig: "./tsconfig.json" }),
